@@ -9,7 +9,7 @@ app.use(express.json())
 const students = ['Jimmy', 'Timothy', 'Jimothy']
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/index.html'))
+    res.sendFile(path.join(__dirname, './index.html'))
 })
 
 app.get('/api/students', (req, res) => {
